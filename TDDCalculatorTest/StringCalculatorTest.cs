@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Moq;
+using NUnit.Framework;
 using TDDCalculator;
 
 namespace TDDCalculatorTest
@@ -66,6 +67,22 @@ namespace TDDCalculatorTest
             int Expected = 0, Actual;
             StringCalculator sc = new StringCalculator();
             Actual = sc.subtract(null);
+            Assert.AreEqual(Expected, Actual, "Subtract for empty failed.");
+        }
+
+        [Test]
+        public void MoqTest()
+        {
+            Mock<StringCalculator> mockStringCalculator;
+
+            int Expected = 4, Actual;
+
+            mockStringCalculator = new Mock<StringCalculator>(MockBehavior.Strict);
+            mockStringCalculator.Setup(x => x.Add(null)).Returns(0);
+            mockStringCalculator.Setup(x => x.Add("2,2")).Returns(4);
+
+            StringCalculator sc = mockStringCalculator.Object;
+            Actual = sc.Add("2,2");
             Assert.AreEqual(Expected, Actual, "Subtract for empty failed.");
         }
 
