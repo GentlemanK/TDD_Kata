@@ -51,5 +51,23 @@ namespace TDDCalculatorTest
             Assert.AreEqual(Expected, Actual, "For N numbers newline failed.");
         }
 
+        [Test]
+        public void SubtractEmptyTest()
+        {
+            int Expected = 0, Actual;
+            StringCalculator sc = new StringCalculator();
+            Actual = sc.subtract("");
+            Assert.AreEqual(Expected, Actual, "Subtract for empty failed.");
+        }
+
+        [Test]
+        public void SubtractNullTest()
+        {
+            int Expected = 0, Actual;
+            StringCalculator sc = new StringCalculator();
+            Actual = sc.subtract(null);
+            Assert.AreEqual(Expected, Actual, "Subtract for empty failed.");
+        }
+
     }
 }

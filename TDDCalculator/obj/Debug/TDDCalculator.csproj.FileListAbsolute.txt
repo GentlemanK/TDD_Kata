@@ -5,3 +5,6 @@ D:\Dilip\TDDCalculator\TDDCalculator\obj\Debug\TDDCalculator.pdb
 D:\Dilip\TDDCalculator\TDDCalculator\obj\Debug\TDDCalculator.csprojResolveAssemblyReference.cache
 D:\Dilip\TDD\TDDCalculator\obj\Debug\TDDCalculator.exe
 D:\Dilip\TDD\TDDCalculator\obj\Debug\TDDCalculator.pdb
+D:\Dilip\TDD\TDDCalculator\obj\Debug\TDDCalculator.csprojResolveAssemblyReference.cache
+D:\Dilip\TDD\TDDCalculator\bin\Debug\TDDCalculator.exe
+D:\Dilip\TDD\TDDCalculator\bin\Debug\TDDCalculator.pdb

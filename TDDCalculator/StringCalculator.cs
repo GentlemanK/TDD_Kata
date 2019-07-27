@@ -22,5 +22,11 @@ namespace TDDCalculator
             }
             return -1;
         }
+        public int subtract(string numbers)
+        {
+            if (numbers == null) return 0;
+            if ("".Equals(numbers)) return 0;
+            return -1;
+        }
     }
 }
